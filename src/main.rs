@@ -124,11 +124,13 @@ use std::process;
 fn main() {
     process::exit(match run::run() {
         Ok(_) => 0,
-        Err(error) => error
-            .source()
-            .as_ref()
-            .and_then(|e| is_clap_help_or_version((&error, &e)))
-            .unwrap_or(0),
+        Err(error) => match error.source() {
+            Some(source) => is_clap_help_or_version((&error, &source)).unwrap_or(0),
+            None => {
+                eprintln!("{}", error);
+                1
+            }
+        },
     })
 }
 

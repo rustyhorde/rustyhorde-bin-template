@@ -34,7 +34,7 @@ crate fn run() -> Result<()> {
     let stdout = log::initialize(&matches)?;
     info!(stdout, "{{project-name}} Started!");
 
-    Err("not implemented".into())
+    Err("protocol:not implemented".into())
 }
 
 fn no_config_dir() -> Error {
