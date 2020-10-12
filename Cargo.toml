@@ -1,9 +1,9 @@
 [package]
 authors = ["{{authors}}"]
 description = "Generated with cargo-generate template 'rustyhorde-bin-template'"
-documentation = "http://docs.rs/{{project-name}}"
+documentation = "http://docs.rs/{{project_name}}"
 edition = "2018"
-homepage = "http://docs.rs/{{project-name}}"
+homepage = "http://docs.rs/{{project_name}}"
 keywords = [""]
 license = "MIT/Apache-2.0"
 name = "{{crate_name}}"

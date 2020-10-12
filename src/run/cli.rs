@@ -1,4 +1,4 @@
-// Copyright (c) {{ "now" | date: "%Y" }} {{project-name}} developers
+// Copyright (c) {{ "now" | date: "%Y" }} {{project_name}} developers
 //
 // Licensed under the Apache License, Version 2.0
 // <LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0> or the MIT
@@ -6,15 +6,15 @@
 // option. All files in the project carrying such notice may not be copied,
 // modified, or distributed except according to those terms.
 
-//! `{{crate-name}}` cli
+//! `{{crate_name}}` cli
 
 use clap::{App, Arg};
 
 crate fn app<'a, 'b>() -> App<'a, 'b> {
-    App::new("{{crate-name}}")
+    App::new("{{crate_name}}")
         .version(env!("CARGO_PKG_VERSION"))
         .author("{{authors}}")
-        .about("{{project-name}}")
+        .about("{{project_name}}")
         .arg(
             Arg::with_name("verbose")
                 .short("v")
