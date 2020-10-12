@@ -1,0 +1,26 @@
+[package]
+authors = ["{{authors}}"]
+description = "Generated with cargo-generate template 'rustyhorde-bin-template'"
+documentation = "http://docs.rs/{{project-name}}"
+edition = "2018"
+homepage = "http://docs.rs/{{project-name}}"
+keywords = [""]
+license = "MIT/Apache-2.0"
+name = "{{crate_name}}"
+readme = "README.md"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2"
+colored = "2"
+dirs2 = "3"
+getset = "0"
+rand = "0"
+slog = { version = "2", features = ["max_level_trace", "release_max_level_debug"] }
+slog-async = "2"
+slog-term = "2"
+
+[build-dependencies]
+vergen = "3"
