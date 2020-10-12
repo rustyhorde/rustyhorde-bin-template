@@ -1,4 +1,4 @@
-// Copyright (c) {{ "now" | date: "%Y" }} {{project_name}} developers
+// Copyright (c) {{ "now" | date: "%Y" }} {{project-name}} developers
 //
 // Licensed under the Apache License, Version 2.0
 // <LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0> or the MIT
@@ -29,7 +29,7 @@ fn random_color() -> Color {
 crate fn header() {
     let color = random_color();
 
-    println!("{}", "{{project_name}}".color(color));
+    println!("{}", "{{project-name}}".color(color));
     println!();
     println!("4a61736f6e204f7a696173");
     println!();

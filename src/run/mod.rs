@@ -1,4 +1,4 @@
-// Copyright (c) {{ "now" | date: "%Y" }} {{project_name}} developers
+// Copyright (c) {{ "now" | date: "%Y" }} {{project-name}} developers
 //
 // Licensed under the Apache License, Version 2.0
 // <LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0> or the MIT
@@ -22,7 +22,7 @@ crate fn run() -> Result<()> {
 
     // Setup the config directory
     let mut config_dir = dirs2::config_dir().ok_or_else(no_config_dir)?;
-    config_dir.push("{{project_name}}");
+    config_dir.push("{{project-name}}");
     let _ = DirBuilder::new()
         .recursive(true)
         .create(config_dir.clone())?;
@@ -32,7 +32,7 @@ crate fn run() -> Result<()> {
 
     // Setup logging
     let stdout = log::initialize(&matches)?;
-    info!(stdout, "{{project_name}} Started!");
+    info!(stdout, "{{project-name}} Started!");
 
     Err("not implemented".into())
 }

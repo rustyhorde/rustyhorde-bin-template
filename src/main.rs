@@ -1,4 +1,4 @@
-// Copyright (c) {{ "now" | date: "%Y" }} {{project_name}} developers
+// Copyright (c) {{ "now" | date: "%Y" }} {{project-name}} developers
 //
 // Licensed under the Apache License, Version 2.0
 // <LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0> or the MIT

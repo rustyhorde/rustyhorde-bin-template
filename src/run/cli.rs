@@ -1,4 +1,4 @@
-// Copyright (c) {{ "now" | date: "%Y" }} {{project_name}} developers
+// Copyright (c) {{ "now" | date: "%Y" }} {{project-name}} developers
 //
 // Licensed under the Apache License, Version 2.0
 // <LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0> or the MIT
@@ -14,7 +14,7 @@ crate fn app<'a, 'b>() -> App<'a, 'b> {
     App::new("{{crate_name}}")
         .version(env!("CARGO_PKG_VERSION"))
         .author("{{authors}}")
-        .about("{{project_name}}")
+        .about("{{project-name}}")
         .arg(
             Arg::with_name("verbose")
                 .short("v")
