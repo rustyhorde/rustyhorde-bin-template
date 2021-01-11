@@ -12,7 +12,7 @@ use colored::{Color, Colorize};
 use rand::Rng;
 
 fn random_color() -> Color {
-    let num = rand::thread_rng().gen_range(0, 7);
+    let num = rand::thread_rng().gen_range(0..7);
 
     match num {
         1 => Color::Green,

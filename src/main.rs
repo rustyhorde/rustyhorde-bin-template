@@ -60,7 +60,7 @@
     non_snake_case,
     non_upper_case_globals,
     nontrivial_structural_match,
-    overlapping_patterns,
+    overlapping_range_endpoints,
     path_statements,
     pointer_structural_match,
     private_doc_tests,
